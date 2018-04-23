@@ -58,6 +58,7 @@ header {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     background-color: #ED1A39;
+    position: fixed;
     top: 0px;
     z-index: 5;
 }
@@ -81,6 +82,7 @@ header .logo {
     border: none;
     padding: 15px;
     height: 56px;
+    position: unset;
 }
 
 .index header .logo {
