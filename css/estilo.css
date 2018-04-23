@@ -53,7 +53,16 @@ iframe {
     margin-bottom: 0px;
 }
 
-.logo {
+header {
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: #ED1A39;
+    top: 0px;
+    z-index: 5;
+}
+
+header .logo {
     background-image: url(../imgs/logo.svg);
     height: 56px;
     width: auto;
@@ -67,14 +76,18 @@ iframe {
     display:none;
 }
 
-header {
-    width: 100%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    background-color: #ED1A39;
-    position: fixed;
-    top: 0px;
-    z-index: 5;
+.index header {
+    background: none;
+    border: none;
+    padding: 15px;
+    height: 56px;
+}
+
+.index header .logo {
+    filter: none;
+    -webkit-filter: none;
+    background-image: none;
+    margin-left: 100px;
 }
 
 section {
@@ -139,6 +152,60 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+}
+
+.sidebar-container {
+    height: 660px;
+    width: 100%;
+}
+
+.sidebar {
+    width: 50%;
+    height: 660px;
+    text-align: center;
+    color: #FFF;
+}
+
+.sidebar.left {
+    background-image: url(../imgs/admin-bg.jpg);
+    float: left;
+}
+
+.sidebar.right {
+    background-image: url(../imgs/ases-bg.jpg);
+    float: right;
+}
+
+.sidebar .logo {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    margin-top: 160px;
+}
+
+.sidebar h2 {
+    margin-bottom: 60px;
+}
+
+.left .logo {
+    background: url(../imgs/a-logo-min.png) no-repeat;
+    background-size: contain;
+}
+
+.right .logo {
+    background: url(../imgs/e-logo-min.png) no-repeat;
+    background-size: contain;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    color: #b7b3ab;
 }
 
 /* Smartphones (portrait)*/
